@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SHMP</string>
+    <string name="discovering">Looking for devices...</string>
+    <string name="username">Username:</string>
+    <string name="email">Email:</string>
+    <string name="password">Password:</string>
+    <string name="password_re">Repeat password:</string>
+    <string name="register">Register</string>
+    <string name="login">Log in</string>
+    <string name="rooms">Rooms</string>
+    <string name="playlists">Playlists</string>
+    <string name="playing">Now playing</string>
+    <string name="in">In</string>
+    <string name="from">From</string>
+    <string name="store">Store</string>
+    <string name="done">Done</string>
+    <string name="rooms_title">Rooms Configuration</string>
+    <string name="set_playlists">Set Playlists</string>
+    <string name="ok">Ok</string>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/usernameSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="50dp"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                            android:id="@+id/usernameLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/username"
+                            android:textAlignment="center"
+                            android:textSize="14pt"
+                            android:textColor="@android:color/black"
+                            />
+                    <EditText
+                            android:id="@+id/usernameBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/usernameLabel"
+                            android:layout_marginLeft="7dp"
+                            android:ems="10"
+                            tools:layout_editor_absoluteY="213dp"
+                            tools:layout_editor_absoluteX="185dp"
+                            android:enabled="true"/>
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/emailSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/usernameSection"
+            android:layout_marginTop="15dp">
+
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+                    <TextView
+                            android:id="@+id/emailLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email"
+                            android:textAlignment="center"
+                            android:textSize="14pt"
+                            android:textColor="@android:color/black"/>
+                    <EditText
+                            android:id="@+id/emailBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/emailLabel"
+                            android:layout_marginLeft="7dp"
+                            android:inputType="textEmailAddress"
+                            android:ems="10"
+                            tools:layout_editor_absoluteY="213dp"
+                            tools:layout_editor_absoluteX="185dp"
+                            android:enabled="true"/>
+
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/passwordSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/emailSection"
+            android:layout_marginTop="15dp">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+            <TextView
+                    android:id="@+id/passwordLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password"
+                    android:textAlignment="center"
+                    android:textSize="14pt"
+                    android:textColor="@android:color/black"
+            />
+            <EditText
+                    android:id="@+id/passwordBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/passwordLabel"
+                    android:layout_marginLeft="7dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    tools:layout_editor_absoluteY="213dp"
+                    tools:layout_editor_absoluteX="185dp"
+                    android:enabled="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rePasswordSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/passwordSection"
+            android:layout_marginTop="15dp">
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+            <TextView
+                    android:id="@+id/rePasswordLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password_re"
+                    android:textAlignment="center"
+                    android:textSize="14pt"
+                    android:textColor="@android:color/black"/>
+            <EditText
+                    android:id="@+id/rePasswordBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/rePasswordLabel"
+                    android:layout_marginLeft="7dp"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    tools:layout_editor_absoluteY="213dp"
+                    tools:layout_editor_absoluteX="185dp"
+                    android:enabled="true"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/registerBtnSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/rePasswordSection"
+            android:layout_marginTop="50dp">
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/register"
+                android:textSize="20dp"
+                android:enabled="true"/>
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/registerBtnSection"-->
+            <!--android:layout_marginTop="50dp">-->
+
+            <!--<ProgressBar-->
+                    <!--android:id="@+id/progressBar"-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_centerHorizontal="true"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+</android.support.constraint.ConstraintLayout>
