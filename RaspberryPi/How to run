@@ -1,0 +1,14 @@
+sudo apt-get update
+sudo apt-get install python-pip python-dev ipython
+sudo apt-get install python-dev libbluetooth-dev
+sudo apt-get install bluetooth libbluetooth-dev
+sudo pip install pybluez
+sudo pip install firebase_admin
+
+sudo nano /lib/systemd/system/bluetooth.service
+# add " -C" at the end of "ExecStart=/usr/lib/bluetooth/bluetoothd"
+
+sudo reboot
+# save any unsaved files you have, this will reboot your device
+
+# make sure bluetooth_adv has execute rights
